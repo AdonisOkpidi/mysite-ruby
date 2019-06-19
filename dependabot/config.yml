@@ -6,5 +6,14 @@ update_configs:
     update_schedule: "live"
     default_reviewers:
     - AdonisOkpidi
+    allowed_updates:
+    - match:
+      update_type: "security"
 
-
+update_configs:
+  - package_manager: "ruby:bundler"
+    directory: "/engines/"
+    update_schedule: "live"  
+    allowed_updates:
+    - match:
+      update_type: "security"
