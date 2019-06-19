@@ -2,18 +2,7 @@ version: 1
 
 update_configs:
   - package_manager: "ruby:bundler"
-    directory: "/"
+    directory: "/common"
     update_schedule: "live"
     default_reviewers:
     - AdonisOkpidi
-    allowed_updates:
-    - match:
-      update_type: "security"
-
-update_configs:
-  - package_manager: "ruby:bundler"
-    directory: "/engines/"
-    update_schedule: "live"  
-    allowed_updates:
-    - match:
-      update_type: "security"
