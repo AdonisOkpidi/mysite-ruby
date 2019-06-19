@@ -2,7 +2,7 @@ version: 1
 
 update_configs:
   - package_manager: "ruby:bundler"
-    directory: "/common"
+    directory: "/"
     update_schedule: "live"
     default_reviewers:
     - AdonisOkpidi
