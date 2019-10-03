@@ -6,6 +6,7 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+The Ruby version will be based on the most recent version.
 
 * System dependencies
 
