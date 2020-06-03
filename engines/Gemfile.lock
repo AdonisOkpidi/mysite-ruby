@@ -1,5 +1,4 @@
 GEM
-  remote: https://fundingcircle.jfrog.io/fundingcircle/api/gems/rubygems-local/
   remote: https://rubygems.org/
   specs:
     actionmailer (4.2.10)
@@ -48,11 +47,6 @@ GEM
       rest-client (~> 1.8.0)
     avro (1.8.2)
       multi_json
-    avro-patches (0.4.1)
-      avro (= 1.8.2)
-    avro-schemas (5.7156.0)
-      activesupport (>= 3.0)
-      avro-patches (~> 0.4.0)
     awesome_print (1.2.0)
     aws-partitions (1.53.0)
     aws-sdk-core (3.13.0)
@@ -74,9 +68,6 @@ GEM
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
-    bilcas-client (4.3.0)
-      activesupport (< 5.0)
-      httparty
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (2.3.2.2)
@@ -88,12 +79,13 @@ GEM
     business_time (0.9.3)
       activesupport (>= 3.2.0)
       tzinfo
-    capybara (2.3.0)
-      mime-types (>= 1.16)
+    capybara (2.18.0)
+      addressable
+      mini_mime (>= 0.1.3)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
-      xpath (~> 2.0)
+      xpath (>= 2.0, < 4.0)
     carrot-top (0.0.7)
       json
     chronic (0.10.2)
@@ -151,10 +143,6 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
-    fc-calculators (0.3.1)
-    fc-vault-rails (0.7.1)
-      activerecord (>= 4.2.8, < 6.0)
-      vault (~> 0.7)
     ffi (1.9.25)
     flip (1.0.1)
       activesupport (>= 3.0, < 5)
@@ -207,8 +195,6 @@ GEM
     json-schema (2.8.0)
       addressable (>= 2.4)
     jwt (1.0.0)
-    kafka_rest_client (1.1.4)
-      httparty (~> 0.13)
     kgio (2.9.2)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -242,7 +228,7 @@ GEM
     nenv (0.3.0)
     netrc (0.11.0)
     newrelic_rpm (5.0.0.342)
-    nokogiri (1.8.3)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
@@ -261,8 +247,8 @@ GEM
       ast (~> 2.2)
     pg (0.17.1)
     pkg-config (1.3.1)
-    poltergeist (1.13.0)
-      capybara (~> 2.1)
+    poltergeist (1.18.1)
+      capybara (>= 2.1, < 4)
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
     powerpack (0.1.1)
@@ -284,7 +270,7 @@ GEM
     public_suffix (3.0.2)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
-    rack (1.6.10)
+    rack (1.6.13)
     rack-cors (1.0.2)
     rack-oauth2 (1.0.10)
       activesupport (>= 2.3)
@@ -435,8 +421,6 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    vault (0.12.0)
-      aws-sigv4
     virtus (0.5.5)
       backports (~> 3.3)
       descendants_tracker (~> 0.0.1)
@@ -450,14 +434,14 @@ GEM
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
       railties (>= 4.2)
-    websocket-driver (0.6.5)
+    websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.2)
+    websocket-extensions (0.1.5)
     whenever (0.9.4)
       chronic (>= 0.6.3)
     will_paginate (3.1.6)
-    xpath (2.1.0)
-      nokogiri (~> 1.3)
+    xpath (3.2.0)
+      nokogiri (~> 1.8)
     zeus (0.15.4)
       method_source (>= 0.6.7)
 
@@ -468,13 +452,11 @@ DEPENDENCIES
   attr_encrypted (~> 3.0.0)
   auth0 (= 4.1.0)
   avro (~> 1.8.2)!
-  avro-schemas!
   awesome_print
   aws-sdk-core
   aws-sdk-s3
   benchmark-memory
   better_errors
-  bilcas-client!
   binding_of_caller
   bootstrap-sass (~> 2.3.2.2)
   bower-rails (~> 0.7.0)
@@ -491,8 +473,6 @@ DEPENDENCIES
   factory_girl
   faraday
   faraday_middleware
-  fc-calculators (= 0.3.1)!
-  fc-vault-rails (~> 0.5)!
   flip
   font-awesome-rails
   foreman
@@ -507,7 +487,6 @@ DEPENDENCIES
   hutch
   jquery-rails (~> 3.1.3)
   json-schema (~> 2.8.0)
-  kafka_rest_client (= 1.1.4)!
   launchy
   letter_opener
   mime-types (= 2.99.3)
@@ -520,7 +499,7 @@ DEPENDENCIES
   parallel_tests
   pg
   pkg-config (~> 1.1)
-  poltergeist
+  poltergeist (>= 1.13.0)
   premailer-rails
   pry
   pry-nav
@@ -552,4 +531,4 @@ DEPENDENCIES
   zeus
 
 BUNDLED WITH
-   1.16.2
+   1.17.3

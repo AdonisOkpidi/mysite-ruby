@@ -92,7 +92,7 @@ end
 group :test do
   gem 'capybara', '~> 2.3'
   gem 'codeclimate-test-reporter', group: :test, require: nil
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.13.0'
   gem 'rspec_junit_formatter'
   gem 'shoulda-matchers'
   gem 'simplecov', '~> 0.9'
