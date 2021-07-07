@@ -1,43 +1,42 @@
 GEM
-  remote: https://fundingcircle.jfrog.io/fundingcircle/api/gems/rubygems-local/
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.2.10)
-      actionpack (= 4.2.10)
-      actionview (= 4.2.10)
-      activejob (= 4.2.10)
+    actionmailer (4.2.11.3)
+      actionpack (= 4.2.11.3)
+      actionview (= 4.2.11.3)
+      activejob (= 4.2.11.3)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 1.0, >= 1.0.5)
-    actionpack (4.2.10)
-      actionview (= 4.2.10)
-      activesupport (= 4.2.10)
+    actionpack (4.2.11.3)
+      actionview (= 4.2.11.3)
+      activesupport (= 4.2.11.3)
       rack (~> 1.6)
       rack-test (~> 0.6.2)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (4.2.10)
-      activesupport (= 4.2.10)
+    actionview (4.2.11.3)
+      activesupport (= 4.2.11.3)
       builder (~> 3.1)
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
-    activejob (4.2.10)
-      activesupport (= 4.2.10)
+    activejob (4.2.11.3)
+      activesupport (= 4.2.11.3)
       globalid (>= 0.3.0)
-    activemodel (4.2.10)
-      activesupport (= 4.2.10)
+    activemodel (4.2.11.3)
+      activesupport (= 4.2.11.3)
       builder (~> 3.1)
-    activerecord (4.2.10)
-      activemodel (= 4.2.10)
-      activesupport (= 4.2.10)
+    activerecord (4.2.11.3)
+      activemodel (= 4.2.11.3)
+      activesupport (= 4.2.11.3)
       arel (~> 6.0)
-    activesupport (4.2.10)
+    activesupport (4.2.11.3)
       i18n (~> 0.7)
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.5.2)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     amq-protocol (2.0.1)
     arel (6.0.4)
     ast (2.3.0)
@@ -48,11 +47,6 @@ GEM
       rest-client (~> 1.8.0)
     avro (1.8.2)
       multi_json
-    avro-patches (0.4.1)
-      avro (= 1.8.2)
-    avro-schemas (5.7156.0)
-      activesupport (>= 3.0)
-      avro-patches (~> 0.4.0)
     awesome_print (1.2.0)
     aws-partitions (1.53.0)
     aws-sdk-core (3.13.0)
@@ -74,15 +68,12 @@ GEM
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
-    bilcas-client (4.3.0)
-      activesupport (< 5.0)
-      httparty
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
     bower-rails (0.7.3)
-    builder (3.2.3)
+    builder (3.2.4)
     bunny (2.3.1)
       amq-protocol (>= 2.0.1)
     business_time (0.9.3)
@@ -108,14 +99,14 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    concurrent-ruby (1.0.5)
-    connection_pool (2.2.1)
+    concurrent-ruby (1.1.9)
+    connection_pool (2.2.5)
     countries (0.9.3)
       currencies (~> 0.4.2)
-    crack (0.4.3)
-      safe_yaml (~> 1.0.0)
-    crass (1.0.4)
-    css_parser (1.3.6)
+    crack (0.4.5)
+      rexml
+    crass (1.0.6)
+    css_parser (1.9.0)
       addressable
     currencies (0.4.2)
     debug_inspector (0.0.2)
@@ -144,17 +135,13 @@ GEM
       request_store (~> 1.0)
     encryptor (3.0.0)
     erubis (2.7.0)
-    execjs (2.6.0)
+    execjs (2.8.1)
     factory_girl (4.4.0)
       activesupport (>= 3.0.0)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
-    fc-calculators (0.3.1)
-    fc-vault-rails (0.7.1)
-      activerecord (>= 4.2.8, < 6.0)
-      vault (~> 0.7)
     ffi (1.9.25)
     flip (1.0.1)
       activesupport (>= 3.0, < 5)
@@ -164,7 +151,7 @@ GEM
     foreman (0.84.0)
       thor (~> 0.19.1)
     formatador (0.2.5)
-    globalid (0.4.1)
+    globalid (0.4.2)
       activesupport (>= 4.2.0)
     guard (2.14.2)
       formatador (>= 0.2.4)
@@ -182,11 +169,11 @@ GEM
       rspec (>= 2.99.0, < 4.0)
     haml (4.0.6)
       tilt
-    hashdiff (0.3.7)
+    hashdiff (1.0.1)
     hashie (3.3.2)
     holidays (5.4.0)
     honeybadger (3.3.0)
-    htmlentities (4.3.3)
+    htmlentities (4.3.4)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     httparty (0.16.2)
@@ -204,32 +191,30 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.6)
-    json-schema (2.8.0)
+    json-schema (2.8.1)
       addressable (>= 2.4)
     jwt (1.0.0)
-    kafka_rest_client (1.1.4)
-      httparty (~> 0.13)
     kgio (2.9.2)
-    launchy (2.4.3)
-      addressable (~> 2.3)
-    letter_opener (1.3.0)
+    launchy (2.5.0)
+      addressable (~> 2.7)
+    letter_opener (1.7.0)
       launchy (~> 2.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    loofah (2.2.2)
+    loofah (2.10.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     lumberjack (1.0.13)
-    mail (2.7.0)
+    mail (2.7.1)
       mini_mime (>= 0.1.1)
     memory_profiler (0.9.8)
     method_source (0.8.2)
     mime-types (2.99.3)
-    mini_mime (1.0.0)
+    mini_mime (1.1.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.3)
+    minitest (5.14.4)
     monetize (1.6.0)
       money (~> 6.8)
     money (6.8.1)
@@ -242,7 +227,7 @@ GEM
     nenv (0.3.0)
     netrc (0.11.0)
     newrelic_rpm (5.0.0.342)
-    nokogiri (1.8.3)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
@@ -266,11 +251,12 @@ GEM
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
     powerpack (0.1.1)
-    premailer (1.8.4)
-      css_parser (>= 1.3.6)
+    premailer (1.15.0)
+      addressable
+      css_parser (>= 1.6.0)
       htmlentities (>= 4.0.0)
-    premailer-rails (1.8.0)
-      actionmailer (>= 3, < 5)
+    premailer-rails (1.11.1)
+      actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -281,10 +267,10 @@ GEM
     pry-stack_explorer (0.4.9.1)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
-    public_suffix (3.0.2)
+    public_suffix (4.0.6)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
-    rack (1.6.10)
+    rack (1.6.13)
     rack-cors (1.0.2)
     rack-oauth2 (1.0.10)
       activesupport (>= 2.3)
@@ -297,43 +283,43 @@ GEM
     rack-rewrite (1.5.0)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails (4.2.10)
-      actionmailer (= 4.2.10)
-      actionpack (= 4.2.10)
-      actionview (= 4.2.10)
-      activejob (= 4.2.10)
-      activemodel (= 4.2.10)
-      activerecord (= 4.2.10)
-      activesupport (= 4.2.10)
+    rails (4.2.11.3)
+      actionmailer (= 4.2.11.3)
+      actionpack (= 4.2.11.3)
+      actionview (= 4.2.11.3)
+      activejob (= 4.2.11.3)
+      activemodel (= 4.2.11.3)
+      activerecord (= 4.2.11.3)
+      activesupport (= 4.2.11.3)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.2.10)
+      railties (= 4.2.11.3)
       sprockets-rails
-    rails-deprecated_sanitizer (1.0.3)
+    rails-deprecated_sanitizer (1.0.4)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.9)
       activesupport (>= 4.2.0, < 5.0)
       nokogiri (~> 1.6)
       rails-deprecated_sanitizer (>= 1.0.1)
-    rails-html-sanitizer (1.0.4)
-      loofah (~> 2.2, >= 2.2.2)
+    rails-html-sanitizer (1.3.0)
+      loofah (~> 2.3)
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
     rails_serve_static_assets (0.0.3)
     rails_stdout_logging (0.0.3)
-    railties (4.2.10)
-      actionpack (= 4.2.10)
-      activesupport (= 4.2.10)
+    railties (4.2.11.3)
+      actionpack (= 4.2.11.3)
+      activesupport (= 4.2.11.3)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rainbow (2.2.2)
       rake
     raindrops (0.13.0)
-    rake (12.3.1)
+    rake (13.0.4)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    react_on_rails (9.0.2)
+    react_on_rails (9.0.3)
       addressable
       connection_pool
       execjs (~> 2.5)
@@ -346,6 +332,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    rexml (3.2.5)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -386,7 +373,6 @@ GEM
       iso8601
     ruby-progressbar (1.8.1)
     ruby_dep (1.5.0)
-    safe_yaml (1.0.4)
     sass (3.5.6)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -414,7 +400,7 @@ GEM
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.1)
+    sprockets-rails (3.2.2)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
@@ -422,7 +408,7 @@ GEM
     thread_safe (0.3.6)
     tilt (2.0.8)
     timecop (0.7.1)
-    tzinfo (1.2.5)
+    tzinfo (1.2.9)
       thread_safe (~> 0.1)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
@@ -435,17 +421,15 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    vault (0.12.0)
-      aws-sigv4
     virtus (0.5.5)
       backports (~> 3.3)
       descendants_tracker (~> 0.0.1)
     warden (1.2.7)
       rack (>= 1.0)
-    webmock (3.3.0)
+    webmock (3.13.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
-      hashdiff
+      hashdiff (>= 0.4.0, < 2.0.0)
     webpacker (3.0.1)
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
@@ -468,13 +452,11 @@ DEPENDENCIES
   attr_encrypted (~> 3.0.0)
   auth0 (= 4.1.0)
   avro (~> 1.8.2)!
-  avro-schemas!
   awesome_print
   aws-sdk-core
   aws-sdk-s3
   benchmark-memory
   better_errors
-  bilcas-client!
   binding_of_caller
   bootstrap-sass (~> 2.3.2.2)
   bower-rails (~> 0.7.0)
@@ -491,8 +473,6 @@ DEPENDENCIES
   factory_girl
   faraday
   faraday_middleware
-  fc-calculators (= 0.3.1)!
-  fc-vault-rails (~> 0.5)!
   flip
   font-awesome-rails
   foreman
@@ -507,9 +487,8 @@ DEPENDENCIES
   hutch
   jquery-rails (~> 3.1.3)
   json-schema (~> 2.8.0)
-  kafka_rest_client (= 1.1.4)!
-  launchy
-  letter_opener
+  launchy (>= 2.4.3)
+  letter_opener (>= 1.3.0)
   mime-types (= 2.99.3)
   monetize
   money (~> 6.8.1)
@@ -521,7 +500,7 @@ DEPENDENCIES
   pg
   pkg-config (~> 1.1)
   poltergeist
-  premailer-rails
+  premailer-rails (>= 1.8.0)
   pry
   pry-nav
   pry-stack_explorer
@@ -531,7 +510,7 @@ DEPENDENCIES
   rack-rewrite
   rails (~> 4.2.10)
   rails_12factor
-  react_on_rails (~> 9.0.0)
+  react_on_rails (~> 9.0.2)
   rspec-its
   rspec-rails
   rspec_junit_formatter
@@ -545,11 +524,11 @@ DEPENDENCIES
   uglifier (>= 2.7)
   unicorn
   virtus (~> 0.5.5)
-  webmock
+  webmock (>= 3.3.0)
   webpacker (~> 3.0)
   whenever (~> 0.9.4)
   will_paginate (~> 3.0)
   zeus
 
 BUNDLED WITH
-   1.16.2
+   1.17.3
