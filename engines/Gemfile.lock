@@ -1,5 +1,4 @@
 GEM
-  remote: https://fundingcircle.jfrog.io/fundingcircle/api/gems/rubygems-local/
   remote: https://rubygems.org/
   specs:
     actionmailer (4.2.10)
@@ -48,11 +47,6 @@ GEM
       rest-client (~> 1.8.0)
     avro (1.8.2)
       multi_json
-    avro-patches (0.4.1)
-      avro (= 1.8.2)
-    avro-schemas (5.7156.0)
-      activesupport (>= 3.0)
-      avro-patches (~> 0.4.0)
     awesome_print (1.2.0)
     aws-partitions (1.53.0)
     aws-sdk-core (3.13.0)
@@ -74,9 +68,6 @@ GEM
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
-    bilcas-client (4.3.0)
-      activesupport (< 5.0)
-      httparty
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (2.3.2.2)
@@ -151,10 +142,6 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
-    fc-calculators (0.3.1)
-    fc-vault-rails (0.7.1)
-      activerecord (>= 4.2.8, < 6.0)
-      vault (~> 0.7)
     ffi (1.9.25)
     flip (1.0.1)
       activesupport (>= 3.0, < 5)
@@ -189,7 +176,8 @@ GEM
     htmlentities (4.3.3)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    httparty (0.16.2)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     httpclient (2.6.0.1)
     hutch (0.21.0)
@@ -207,8 +195,6 @@ GEM
     json-schema (2.8.0)
       addressable (>= 2.4)
     jwt (1.0.0)
-    kafka_rest_client (1.1.4)
-      httparty (~> 0.13)
     kgio (2.9.2)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -435,8 +421,6 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    vault (0.12.0)
-      aws-sigv4
     virtus (0.5.5)
       backports (~> 3.3)
       descendants_tracker (~> 0.0.1)
@@ -468,13 +452,11 @@ DEPENDENCIES
   attr_encrypted (~> 3.0.0)
   auth0 (= 4.1.0)
   avro (~> 1.8.2)!
-  avro-schemas!
   awesome_print
   aws-sdk-core
   aws-sdk-s3
   benchmark-memory
   better_errors
-  bilcas-client!
   binding_of_caller
   bootstrap-sass (~> 2.3.2.2)
   bower-rails (~> 0.7.0)
@@ -491,8 +473,6 @@ DEPENDENCIES
   factory_girl
   faraday
   faraday_middleware
-  fc-calculators (= 0.3.1)!
-  fc-vault-rails (~> 0.5)!
   flip
   font-awesome-rails
   foreman
@@ -503,11 +483,10 @@ DEPENDENCIES
   hashie (~> 3.0)
   holidays
   honeybadger (~> 3.3)
-  httparty
+  httparty (>= 0.21.0)
   hutch
   jquery-rails (~> 3.1.3)
   json-schema (~> 2.8.0)
-  kafka_rest_client (= 1.1.4)!
   launchy
   letter_opener
   mime-types (= 2.99.3)
@@ -552,4 +531,4 @@ DEPENDENCIES
   zeus
 
 BUNDLED WITH
-   1.16.2
+   1.17.3
