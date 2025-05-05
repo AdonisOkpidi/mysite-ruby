@@ -81,7 +81,7 @@ group :test, :development do
   gem 'pry-nav'
   gem 'pry-stack_explorer'
   gem 'rspec-its'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'zeus'
   gem 'benchmark-memory'
   gem 'factory_girl'
