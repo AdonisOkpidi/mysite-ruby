@@ -27,7 +27,7 @@ gem 'delayed_job_active_record'
 gem 'devise', '~> 4.2'
 gem 'dotenv'
 gem 'draper', '~> 1.4.0'
-gem 'faraday'
+gem 'faraday', '>= 2.14.1'
 gem 'faraday_middleware'
 gem 'flip'
 gem 'font-awesome-rails'
@@ -76,7 +76,7 @@ end
 
 group :test, :development do
   gem 'launchy'
-  gem 'oauth2'
+  gem 'oauth2', '>= 1.4.8'
   gem 'pry'
   gem 'pry-nav'
   gem 'pry-stack_explorer'
